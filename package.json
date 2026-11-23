@@ -1,0 +1,16 @@
+{
+	"name": "@seldszar/chatlet",
+	"main": "distribution/index.js",
+	"scripts": {
+		"build": "tsc"
+	},
+	"dependencies": {
+		"@tmi.js/chat": "^0.8.0"
+	},
+	"devDependencies": {
+		"typescript": "^7.0.2"
+	},
+	"publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}
