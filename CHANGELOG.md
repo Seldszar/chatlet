@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/Seldszar/chatlet/compare/v1.0.1...v1.0.2) (2026-11-23)
+
+
+### Bug Fixes
+
+* manager ([a6fe15c](https://github.com/Seldszar/chatlet/commit/a6fe15cbdd0a63a20798e00696f2634c214eec25))
+
 ## [1.0.1](https://github.com/Seldszar/chatlet/compare/v1.0.0...v1.0.1) (2026-11-23)
 
 
