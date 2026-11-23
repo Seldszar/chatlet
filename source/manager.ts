@@ -79,6 +79,10 @@ export class Manager {
 
     this.queue = new DelayQueue(options.onMessage);
 
+    this.chatClient.on("connect", () => {
+      this.refresh();
+    });
+
     this.chatClient.on("moderation", (event) => {
       switch (event.type) {
         case "deleteMessage": {
@@ -124,7 +128,9 @@ export class Manager {
 
       this.queue.add(line, options.queueDelay);
     });
+  }
 
+  open() {
     this.chatClient.connect();
   }
 
