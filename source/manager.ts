@@ -156,7 +156,7 @@ export class Manager {
   }
 
   getUserColor(userId: string, value: string) {
-    return value || `#${(Number.parseInt(userId) * 0x41A7) % 0xFFFFFF}`;
+    return value || `#${(((Number.parseInt(userId) * 0x9E3779B1) >>> 0) % 0xFFFFFF).toString(16).padStart(6, "0")}`;
   }
 
   parseMessage(text: string, emoteOffsets: EmoteOffset[]) {
